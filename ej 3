@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double valorHora, horasTrabajadas;
+
+    cout << "Ingrese el valor de la hora: ";
+    cin >> valorHora;
+
+    cout << "Ingrese las horas trabajadas: ";
+    cin >> horasTrabajadas;
+
+    double salarioBruto = valorHora * horasTrabajadas;
+    double retencion = salarioBruto * 0.12;
+    double seguridadSocial = salarioBruto * 0.05;
+    double salarioNeto = salarioBruto - retencion - seguridadSocial;
+
+    cout << "Salario Bruto: " << salarioBruto << endl;
+    cout << "Descuento Retencion (12%): " << retencion << endl;
+    cout << "Descuento Seguridad Social (5%): " << seguridadSocial << endl;
+    cout << "Salario Neto: " << salarioNeto << endl;
+
+    return 0;
+}
