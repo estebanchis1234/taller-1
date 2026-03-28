@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    double a, b, c;
+
+    cout << "Ingrese el lado a: ";
+    cin >> a;
+
+    cout << "Ingrese el lado b: ";
+    cin >> b;
+
+    cout << "Ingrese el lado c: ";
+    cin >> c;
+
+    double s = (a + b + c) / 2;
+    double area = sqrt(s * (s - a) * (s - b) * (s - c));
+
+    cout << "Semiperimetro: " << s << endl;
+    cout << "Area del triangulo: " << area << endl;
+
+    return 0;
+}
