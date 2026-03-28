@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int cantidad;
+    
+    cout << "Ingrese la cantidad: ";
+    cin >> cantidad;
+
+    int billetes20 = cantidad / 20;
+    int residuo1 = cantidad % 20;
+
+    int billetes10 = residuo1 / 10;
+    int residuo2 = residuo1 % 10;
+
+    int billetes5 = residuo2 / 5;
+    int monedas1 = residuo2 % 5;
+
+    cout << billetes20 << " billetes de $20" << endl;
+    cout << billetes10 << " billetes de $10" << endl;
+    cout << billetes5 << " billetes de $5" << endl;
+    cout << monedas1 << " monedas de $1" << endl;
+
+    return 0;
+}
